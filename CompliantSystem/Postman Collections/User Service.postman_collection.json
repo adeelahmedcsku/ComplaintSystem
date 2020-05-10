@@ -1,0 +1,139 @@
+{
+	"id": "5adcc0f6-d571-8a98-d2ac-59aecf54f630",
+	"name": "User Service",
+	"description": "",
+	"order": [
+		"1164fe05-7e50-ec2a-126c-bafe884da584",
+		"16639f31-949d-c0ed-ab57-a564542c1a57",
+		"ce036a53-3689-f5df-6fec-31f690c4a476",
+		"dadee128-4a0c-1cf6-3a87-c11ed3bf868d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1589065378919,
+	"owner": "3880057",
+	"public": false,
+	"requests": [
+		{
+			"id": "1164fe05-7e50-ec2a-126c-bafe884da584",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/api/user/authenticate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1589127629830,
+			"name": "Register",
+			"description": "",
+			"collectionId": "5adcc0f6-d571-8a98-d2ac-59aecf54f630",
+			"responses": [],
+			"rawModeData": "{\"FirstName\":\"adeel\", \"LastName\":\"ahmed\", \"Username\": \"adeel\",\"Password\":\"123\"} "
+		},
+		{
+			"id": "16639f31-949d-c0ed-ab57-a564542c1a57",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/api/user/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1589127625286,
+			"name": "Login/Authenticate",
+			"description": "",
+			"collectionId": "5adcc0f6-d571-8a98-d2ac-59aecf54f630",
+			"responses": [],
+			"rawModeData": "{\"FirstName\":\"adeel\", \"LastName\":\"ahmed\", \"Username\": \"adeelahmed\",\"Password\":\"123\"} \n"
+		},
+		{
+			"id": "ce036a53-3689-f5df-6fec-31f690c4a476",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODkxMjA5ODAsImV4cCI6MTU4OTcyNTc4MCwiaWF0IjoxNTg5MTIwOTgwfQ.EuRRZ_2WtrKsAk-Hz6OBkwohrZREb0nCP14TsEHLxIo\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE1ODkxMjA5ODAsImV4cCI6MTU4OTcyNTc4MCwiaWF0IjoxNTg5MTIwOTgwfQ.EuRRZ_2WtrKsAk-Hz6OBkwohrZREb0nCP14TsEHLxIo",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/api/user/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5adcc0f6-d571-8a98-d2ac-59aecf54f630",
+			"data": null,
+			"dataMode": "params",
+			"name": "getUser",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1589127579600,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "dadee128-4a0c-1cf6-3a87-c11ed3bf868d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:4000/api/user/register",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5adcc0f6-d571-8a98-d2ac-59aecf54f630",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:4000/api/user/register",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1589127638267,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"FirstName\":\"adeel\", \"LastName\":\"ahmed\", \"Username\": \"adeelahmed\",\"Password\":\"123\"} \n"
+		}
+	]
+}
